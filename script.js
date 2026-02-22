@@ -91,3 +91,15 @@ function updateDashboard() {
     interviewCountEl.innerText = interviewCount;
     rejectedCountEl.innerText = rejectedCount;
 }
+
+// Status update function with Toggle
+function updateStatus(jobId, newStatus) {
+    const jobIndex = jobs.findIndex(job => job.id === jobId);
+    if (jobIndex !== -1) {
+        jobs[jobIndex].status = newStatus;
+        updateDashboard();
+        
+        const activeTabText = document.querySelector('.btn-active-tab').innerText;
+        handleTabFilter(activeTabText);
+    }
+}
