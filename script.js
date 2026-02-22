@@ -74,3 +74,10 @@ let jobs = [
         description: "We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.", 
         status: "NOT APPLIED" }
 ];
+
+// DOM manipulation
+const jobsList = document.getElementById('jobs-list');
+const totalCountEl = document.getElementById('total-count');
+const jobsCountEl = document.getElementById('jobs-count');
+const interviewCountEl = document.getElementById('interview-count');
+const rejectedCountEl = document.getElementById('rejected-count');
