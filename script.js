@@ -81,3 +81,13 @@ const totalCountEl = document.getElementById('total-count');
 const jobsCountEl = document.getElementById('jobs-count');
 const interviewCountEl = document.getElementById('interview-count');
 const rejectedCountEl = document.getElementById('rejected-count');
+
+// Dashboard update function
+function updateDashboard() {
+    const interviewCount = jobs.filter(job => job.status === "INTERVIEW").length;
+    const rejectedCount = jobs.filter(job => job.status === "REJECTED").length;
+
+    totalCountEl.innerText = jobs.length;
+    interviewCountEl.innerText = interviewCount;
+    rejectedCountEl.innerText = rejectedCount;
+}
