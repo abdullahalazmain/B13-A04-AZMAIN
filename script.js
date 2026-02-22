@@ -154,7 +154,7 @@ function renderJobs(jobsToRender) {
                     <p class="text-[#64748b] text-base">${job.position}</p>
                 </div>
                 <button onclick="deleteJob(${job.id})" class="p-2 border border-[#f1f2f4] rounded-full hover:bg-red-50">
-                    <img src="./assets/delete.png" alt="Delete" class="w-4 h-4">
+                    <img src="./assets/delete.svg" alt="Delete" class="w-4 h-4">
                 </button>
             </div>
             
