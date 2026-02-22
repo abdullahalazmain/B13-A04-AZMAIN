@@ -103,3 +103,13 @@ function updateStatus(jobId, newStatus) {
         handleTabFilter(activeTabText);
     }
 }
+
+// Delete job function
+function deleteJob(jobId) {
+    jobs = jobs.filter(job => job.id !== jobId);
+    updateDashboard();
+    
+    const activeTabText = document.querySelector('.btn-active-tab').innerText;
+    handleTabFilter(activeTabText);
+}
+
